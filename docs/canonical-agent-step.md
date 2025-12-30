@@ -51,3 +51,39 @@ deterministic manner.
 
 Any deviation from these rules results in an INVALID step and
 MUST cause verification to fail.
+
+## 6. Encoding
+
+A Canonical Agent Step MUST be encoded using UTF-8.
+
+- Byte Order Mark (BOM) MUST NOT be used.
+- Newline character MUST be `\n`.
+- Any other encoding or newline form results in an INVALID step.
+
+## 7. JSON Canonical Form
+
+A Canonical Agent Step MUST be represented as a JSON object
+serialized in Canonical JSON form.
+
+The following rules are REQUIRED:
+
+- Object keys MUST be sorted lexicographically by byte order.
+- No trailing commas are allowed.
+- No insignificant whitespace is allowed.
+- Numbers MUST be represented in base-10 notation.
+- Scientific notation MUST NOT be used.
+- Boolean values MUST be `true` or `false`.
+- Null values MUST be `null`.
+
+If a non-canonical JSON serializer is used, the output MUST be
+canonicalized before hashing.
+
+## 8. Hash Algorithm
+
+AGES v1 uses the SHA-256 cryptographic hash function.
+
+- Hash output MUST be represented as lowercase hexadecimal.
+- The hash MUST be computed over the canonical byte representation
+  of the Canonical Agent Step.
+
+
