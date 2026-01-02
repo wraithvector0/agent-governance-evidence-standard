@@ -15,7 +15,7 @@ Fail-closed agent governance with offline-verifiable cryptographic evidence.
 
 
 AGES is an open, vendor-neutral specification.
-Wraithvector provides the initial reference implementation.
+Wraithvector AI Systems provides the initial reference implementation.
 
 ## Purpose
 
