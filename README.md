@@ -1,7 +1,6 @@
 # agent-governance-evidence-standard (AGES) V1
 Fail-closed agent governance with offline-verifiable cryptographic evidence.
 
-## Authorship and Maintenance
 
 ## Authorship and Maintenance
 
