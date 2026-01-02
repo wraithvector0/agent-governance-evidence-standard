@@ -165,7 +165,8 @@ The semantic type of the step.
 Allowed values:
 - "GENESIS"
 - "GOVERNANCE_DECISION"
-- "EXPORT"
+- "EXPORT" — EXPORT steps represent evidence materialization events and MUST NOT alter governance decisions.
+
 
 #### 9.9 actor
 
@@ -187,6 +188,9 @@ Required fields:
   A stable identifier for the actor.
 
 The actor object MUST NOT contain secrets or personally identifiable information.
+
+For steps with `kind` set to "GENESIS", the actor SHOULD be of type "system".
+
 
 #### 9.10 subject
 
