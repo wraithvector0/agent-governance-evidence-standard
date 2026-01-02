@@ -1,4 +1,4 @@
-# agent-governance-evidence-standard (AGES) V1
+# Agent-Governance-Evidence-Standard (AGES) V1
 Fail-closed agent governance with offline-verifiable cryptographic evidence.
 
 
