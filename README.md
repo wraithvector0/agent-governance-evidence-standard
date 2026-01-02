@@ -3,8 +3,16 @@ Fail-closed agent governance with offline-verifiable cryptographic evidence.
 
 ## Authorship and Maintenance
 
+## Authorship and Maintenance
+
 **Author:** Fran Martos  
-**Initial Maintainer:** Wraithvector
+
+**Initial Maintainer:** Wraithvector AI Systems  
+
+**Reference implementation & verifier:** Apache 2.0 licensed  
+
+**Enterprise runtime (non-open-source):** https://wraithvector.com
+
 
 AGES is an open, vendor-neutral specification.
 Wraithvector provides the initial reference implementation.
@@ -23,7 +31,7 @@ The standard focuses exclusively on:
   ## Explicitly Out of Scope
 
 AGES does NOT define or standardize:
-- Risk scoring, probabilities, or severity levels as it is heuristic and exchangable
+- Risk scoring, probabilities, or severity levels as it is heuristic and interchangeable
 - AI reasoning or model explanations
 - Detection heuristics or classifiers
 - Dashboards, monitoring, or observability UX
